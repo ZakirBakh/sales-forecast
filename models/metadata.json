@@ -1,0 +1,128 @@
+{
+  "created": "2026-11-08T19:41:03",
+  "data_last_date": "2026-09-30",
+  "horizon_days": 28,
+  "split": {
+    "train_end": "2026-03-31",
+    "val": [
+      "2026-04-01",
+      "2026-06-30"
+    ],
+    "test": [
+      "2026-07-01",
+      "2026-09-30"
+    ]
+  },
+  "best_params": {
+    "objective": "poisson",
+    "tweedie_variance_power": 1.3,
+    "learning_rate": 0.03465156905622393,
+    "num_leaves": 49,
+    "min_child_samples": 28,
+    "feature_fraction": 0.7076651794629198,
+    "bagging_fraction": 0.9339267483363018,
+    "bagging_freq": 1,
+    "lambda_l2": 16.909204358540762,
+    "n_estimators": 1300,
+    "verbose": -1,
+    "random_state": 42
+  },
+  "optuna_trials": 40,
+  "test_metrics": {
+    "WAPE": 0.317,
+    "WAPE_week": 0.2631,
+    "WAPE_month": 0.2363,
+    "macro_WAPE": 0.4155,
+    "MAE": 41.1338,
+    "RMSE": 337.3849,
+    "Bias": -0.0799
+  },
+  "test_metrics_baseline": {
+    "WAPE": 0.359,
+    "WAPE_week": 0.2732,
+    "WAPE_month": 0.2349,
+    "macro_WAPE": 0.4332,
+    "MAE": 46.5769,
+    "RMSE": 340.9645,
+    "Bias": -0.0874
+  },
+  "test_metrics_without_events": {
+    "WAPE": 0.226,
+    "WAPE_week": 0.1643,
+    "WAPE_month": 0.1336,
+    "macro_WAPE": 0.386,
+    "MAE": 25.7458,
+    "RMSE": 60.0381,
+    "Bias": 0.0455
+  },
+  "test_metrics_without_events_baseline": {
+    "WAPE": 0.2737,
+    "WAPE_week": 0.1819,
+    "WAPE_month": 0.1317,
+    "macro_WAPE": 0.4047,
+    "MAE": 31.1871,
+    "RMSE": 78.6525,
+    "Bias": 0.0372
+  },
+  "backtest_mean_WAPE": {
+    "model": 0.3155,
+    "baseline": 0.4678
+  },
+  "n_features": 37,
+  "features": [
+    "product_group",
+    "series",
+    "credit_supply_limit",
+    "dow",
+    "dom",
+    "month",
+    "weekofyear",
+    "days_to_month_end",
+    "is_holiday",
+    "is_nonwork",
+    "nonwork_before",
+    "pre_nonwork",
+    "lag_28",
+    "lag_35",
+    "lag_42",
+    "lag_49",
+    "lag_56",
+    "lag_63",
+    "lag_91",
+    "lag_182",
+    "lag_364",
+    "same_dow_mean_4",
+    "same_dow_mean_8",
+    "roll_mean_7",
+    "roll_mean_14",
+    "roll_mean_28",
+    "roll_mean_56",
+    "roll_mean_91",
+    "roll_std_28",
+    "roll_max_28",
+    "zero_share_28",
+    "workday_mean_28",
+    "trend_7_91",
+    "trend_28_91",
+    "yoy_mean_28",
+    "limit_share_lag_window",
+    "days_since_start"
+  ],
+  "series": [
+    "Депозит: Классические срочные",
+    "Депозит: Копилка (онлайн)",
+    "Депозит: Онлайн-вклады",
+    "Депозит: Пенсионные",
+    "Карта: Visa/MC массовые (именные + предвыпущенные)",
+    "Карта: Виртуальные",
+    "Карта: Зарплатные",
+    "Карта: Кредитные / рассрочка",
+    "Карта: Нерезиденты",
+    "Карта: Элкарт пенс/соц",
+    "Карта: Элкарт розница",
+    "Кредит: Ипотека, авто и прочие",
+    "Кредит: Онлайн кредит",
+    "Кредит: Товарный кредит / рассрочка",
+    "Кредит: Экспресс и кредит наличными"
+  ]
+}

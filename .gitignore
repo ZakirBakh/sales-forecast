@@ -1,0 +1,18 @@
+# Реальные данные банка в репозиторий не кладём — только обезличенные (*_masked.csv)
+data/raw/sales_series_daily.csv
+data/raw/sales_series_daily_by_channel.csv
+*.xlsx
+*.xls
+
+# Материалы к защите (в них реальные цифры)
+*.pptx
+docs/
+
+# Служебные файлы
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+catboost_info/
+.DS_Store
+.vscode/
